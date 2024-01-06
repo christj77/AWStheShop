@@ -1,0 +1,548 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255  , 255, 255;
+  --background-end-rgb: 255, 255, 255 ;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  display:flexbox;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+.larger-text {
+  font-size: 1.5em; /* Increases the text size by 1.5 times the parent element's font size */
+}
+h1{
+  text-align: center;
+  font-size: 200%;
+  padding: 1%;
+}
+/*NAVBAR -------------------------------------------------------------------------------------------------------------------------------/
+
+/* Navbar styles */
+.nav {
+  background-color: #6048ec;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+   
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line if needed */
+}
+
+.logo{
+  size: 10%;
+}
+/*--------------------------------------------------------------------------------------*/
+.ProductList{
+  width: 100%;
+  align-items: flex-start;
+}
+
+.flex-products{
+  display: flex;
+  align-items:baseline;
+}
+
+ 
+.product-center{
+  text-align: left;
+  }
+.Sidebar{
+  width: 10%;
+}
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.categories-bar{
+  align-self: center;
+}
+.bg-brown-100 {
+  background-color: #d2b48c;
+  /* Adjust other styling properties as needed */
+}
+
+.bg-white-100 {
+  background-color: #ffffff;
+  /* Adjust other styling properties as needed */
+}
+
+.w-64 {
+  width: calc(25% - 16px); /* Calculate width for 4 columns with margin */
+  margin: 8px; /* Adjust margin as needed */
+}
+.categories-bar {
+  background-color: #57ee63;
+  padding: 10px;
+}
+
+.horizontal-bar {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling if necessary */
+}
+
+.category-link {
+  text-decoration: none;
+  color: #333;
+  margin-right: 15px; /* Adjust spacing between categories */
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.category-link:hover {
+  background-color: #ddd;
+}
+
+/* Add more styling properties for other classes used in ProductList component */
+/* For instance: .text-2xl, .font-bold, .text-lg, .text-sm, .bg-green-200, etc. */
+
+/*-------------------------------------------------------*/
+.logo {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Navbar links */
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ddd;
+}
+/* SIDEBAR----------------------------------------------------------------------------------------------------------------------------*/
+/* Sidebar.css */
+
+.sidebar {
+  width: 22%;
+  background-color: #7ff270;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  margin-bottom: 10px;
+}
+
+.category-list li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.category-list li a:hover {
+  color: #000;
+}
+
+
+
+/* signup.css *------------------------------------------------------------------------------------------------------------------------------------------/
+
+/* styles.css */
+
+/* Navbar styles */
+/* Assuming Navbar is a component and has its own styling */
+
+/* Form styles */
+.form-body {
+  max-width: 30%;
+   
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #a7f595;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+ 
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+  
+/* login.css *------------------------------------------------------------------------------------------------------------------------------------------/
+
+ 
+
+/* Container styles */
+ 
+.container{
+  align-items: center;
+  
+}
+/* Form styles */
+form {
+  max-width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #a7f595;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type='submit'] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+/* Google Login button styles */
+.google-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.google-button:hover {
+  background-color: #f0f0f0;
+}
+
+.loginbutons{
+ text-align: center;
+}
+ 
+
+
+
+
+
+
+
+/* footer.css ----------------------------------------------------------------------------------------------*/
+
+.footer {
+  
+  background-color: #f58319;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  
+}
+
+.footer__content {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  margin-bottom: 2%;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-details li {
+  margin-bottom: 3%;
+}
+
+
+
+
+
+
+
+
+/* AboutPage.css----------------------------------------------------------------------------------------------*/
+
+/* Styles for the AboutPage component */
+.about-container {
+  
+  max-width: 90%;
+   
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  align-content: center;
+}
+ 
+.about-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-container img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+   
+}
+
+.about-container h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.about-container p {
+  margin-bottom: 20px;
+}
+/* AboutPage.css----------------------------------------------------------------------------------------------*/
+.cartTab{
+  background-color: rgb(228, 245, 218);
+  width: 15%;
+  position: fixed;
+inset: 0 0 0 auto;
+display: grid;
+grid-template-rows:50px  1fr  70px ;
+}
+
+
+.cartTab h1{
+font-weight: 500;
+padding: 5px;
+margin: 0;
+
+}
+ 
+.cartTab .but {
+  display: grid;
+ grid-template-columns: repeat(2,1fr);
+
+  }
+  
+  .cartTab but button {
+    background-color: yellow;
+  
+    }
+.close {
+  background-color: rgb(4, 255, 46);
+  padding: 8px 16px; /* Adjust padding as needed */
+  margin: 4px; /* Add margin for spacing */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Apply border radius */
+  color: white; /* Text color */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+ 
+.checkout {
+  background-color: rgb(4, 255, 46);
+  padding: 8px 16px; /* Adjust padding as needed */
+  margin: 4px; /* Add margin for spacing */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Apply border radius */
+  color: white; /* Text color */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.cartTab .listcart .item img{
+  width: 100%;
+}
+
+.cartTab .listcart .item {
+  
+  display: grid;
+  grid-template-columns: 50px  100px  50px  1fr;
+  gap: 5px;
+  text-align: center;
+  align-items: center;
+
+}
+
+/*--------------------------------------------------------------------*/
+/*cart2*/
+.cartTab2{
+  background-color: rgb(228, 245, 218);
+ 
+inset: 0 0 0 auto;
+display: grid;
+grid-template-rows:50px  1fr  70px ;
+}
+
+
+.cartTab2 h1{
+font-weight: 500;
+padding: 5px;
+margin: 0;
+
+}
+ 
+.cartTab2 .but {
+  display: grid;
+ grid-template-columns: repeat(2,1fr);
+
+  }
+  
+  .cartTab2 but button {
+    background-color: yellow;
+  
+    }
+.close2 {
+  background-color: rgb(4, 255, 46);
+  padding: 8px 16px; /* Adjust padding as needed */
+  margin: 4px; /* Add margin for spacing */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Apply border radius */
+  color: white; /* Text color */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+ 
+.checkout2 {
+  background-color: rgb(4, 255, 46);
+  padding: 8px 16px; /* Adjust padding as needed */
+  margin: 4px; /* Add margin for spacing */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Apply border radius */
+  color: white; /* Text color */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.cartTab2 .listcart2 .item2 img{
+  width: 100%;
+}
+
+.cartTab2 .listcart2 .item2 {
+  
+  display: grid;
+  grid-template-columns: 5%  5%  5% 5%;
+  gap: 20%;
+  text-align: center;
+  align-items: center;
+
+}
+
+.listcart2 .quantity span{
+display: inline-block;
+width: 25px;
+height: 25px;
+background-color: white;
+color: black;
+border-radius: 50%;
+cursor: pointer;
+
+}
+
+.listcart2 .item2:nth-child(even){
+  background-color: brown;
+}
+
+.listcart2{
+  overflow: auto;
+}
+
+
+
+  }
+
